@@ -5,68 +5,75 @@
     <title>About me | FixingMind5</title>
     <!--Aquí agregas un logo plis-->
     <link rel="icon" type="image/png" href="">
-    <link rel="stylesheet" href="../Estilos/styles.css">
-    <link rel="stylesheet" href="../Estilos/Normalize.css">
+    <link rel="stylesheet" href="Estilos/styles.css">
+    <link rel="stylesheet" href="Estilos/Normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class="">
+    <header class="header">
+      <div class="container">
         <figure>
-          <img src="" alt="Logo FixingMind5">
+          <!--<img src="" alt="Logo FixingMind5">-->
         </figure>
         <nav>
           <ul>
-            <li><a href="#portfolio">Portafolio</a></li>
-            <li><a href="#experience">Experiencia</a></li>
-            <li><a href="#together">Trabajemos juntos</a></li>
+            <li><a class="link" href="#portfolio">Portafolio</a></li>
+            <li><a class="link" href="#idiomas">Idiomas</a></li>
+            <li><a class="link" href="#together">Trabajemos juntos</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <section>
-      <h1>Hola soy Alejandro Aguilar,<br/>aspirante a <strong>¡machine learning
-      engineer!</strong></h1>
-      <img>Imagen de portada
+    <section class="hero">
+      <h1 class="hero-title">Hola soy <strong>Alejandro Aguilar</strong>,<br/>aspirante a ¡<strong>machine learning</strong>
+      engineer!</h1>
     </section>
-    <section id="portfolio">
-      <h2>Portafolio | (proyectos destacados)</h2>
-      <article>
-        <h3>Platzi Ventas</h3>
-        <h6>Python / Click</h6>
-        <p><small><strong>Fecha:</strong> 01/07/2019</small></p>
-        <p>
-          <small>
-            <strong>Puedes verlo en:</strong>
-        <a href="https://github.com/FixingMind5/Platzi_Ventas">Platzi Ventas</a>
-          </small>
-        </p>
-        <p>Una pequeña aplicación creada con la línea de comandos con la ayuda
-        se <strong>Click!</strong>, fue el resultado de un proyecto hecho en
-        <a href="https://platzi.com/">Platzi</a> </p>
-        <img src="pVentas.png" alt="platzi ventas" width="500" height="300">
-      </article>
+    <section id="portfolio" class="portfolio">
+      <div class="portfolio-div">
+        <h2 class="project-title">Portafolio | (proyectos destacados)</h2><br/>
+        <article class="project-article">
+          <h3 class="project-subtitle">Platzi Ventas</h3>
+          <h6 class="project-language">Python / Click</h6>
+          <p class="project-date"><small><strong>Fecha:</strong> 01/07/2019</small></p>
+          <p class="project-ref">
+            <small>
+              <strong>Puedes verlo en:</strong>
+              <a class="project-link" href="https://github.com/FixingMind5/Platzi_Ventas">Platzi Ventas</a>
+            </small>
+          </p>
+          <p class="project-description">Una pequeña aplicación creada con la línea de comandos con la ayuda
+            de <strong>Click!</strong>, fue el resultado de un proyecto hecho en
+            <a class="project-link" href="https://platzi.com/">Platzi</a></p>
+          <figure class="project-imageContainer">
+            <img class="project-image" src="pVentas.png" alt="platzi ventas" width="500" height="300">
+          </figure>
+          </article>
+        </section>
+      </div>
+    <section id="idiomas" class="idioms">
+      <div class="idioms-div">
+        <h2 class="idioms-start">Idiomas</h2>
+        <p class="idioms-description">Una breve descripción de mí en los idiomas que sé</p>
+        <article class="idioms-article">
+          <h3 class="idiom">English</h3>
+          <figure class="idiom-imageContainer">
+            <img class="idiom-image" src="Ingles.png" alt="United States flag" width="50", height="25">
+          </figure>
+          <p class="idiom-description">Hello, this is me Alejandro Aguilar, I'm an 18 years old guy that is
+            in love with the programming and mathematics, my hometown is Mexico
+            City a beautiful place with eyes that comes from the sky</p>
+          </article>
+      </div>
     </section>
-    <section id="experience">
-      <h2>Más sobre mi experiencia</h2>
-      <article>
-        <figure>
-          <img alt="Inserta otras imagenes aquí">
-        </figure>
-        <h3>PENDIENTE!</h3>
-        <p>
-          <a href="https://www.youtube.com/watch?v=TsTtqGAxvWk" target="_blank">
-            cancion
-          </a>
-        </p>
-      </article>
-    </section>
-    <section id="together">
-      <form action="/suscription/" method="post">
-        <h3>¿Creamos algo juntos?</h3>
-        <input type="email" name="" value="" placeholder="Déjame tu e-mail">
-        <button>Send!</button>
+    <section id="together" class="colaboration">
+      <form class="colaboration-form" action="/suscription/" method="post">
+        <h3 class="colaboration-title">¿Creamos algo juntos?</h3>
+        <input class="colaboration-request" type="email" placeholder="Déjame tu e-mail">
+        <button class="colaboration-send">Send!</button>
       </form>
     </section>
-    <footer>footer</footer>
+    <footer class="footer">footer</footer>
   </body>
 </html>
