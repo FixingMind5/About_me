@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <title>About me | FixingMind5</title>
+    <!--Aquí agregas un logo plis-->
+    <link rel="icon" type="image/png" href="">
+    <link rel="stylesheet" href="../Estilos/styles.css">
+    <link rel="stylesheet" href="../Estilos/Normalize.css">
   </head>
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-    }
-  </style>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a>Portafolio</a></li>
-          <li><a>Experiencia</a></li>
-          <li><a>Trabajemos juntos</a></li>
-        </ul>
-      </nav>
+      <div class="">
+        <figure>
+          <img src="" alt="Logo FixingMind5">
+        </figure>
+        <nav>
+          <ul>
+            <li><a href="#portfolio">Portafolio</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#together">Trabajemos juntos</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <section>
       <h1>Hola soy Alejandro Aguilar,<br/>aspirante a <strong>¡machine learning
       engineer!</strong></h1>
       <img>Imagen de portada
     </section>
-    <section>
+    <section id="portfolio">
       <h2>Portafolio | (proyectos destacados)</h2>
       <article>
         <h3>Platzi Ventas</h3>
@@ -37,19 +42,31 @@
         </p>
         <p>Una pequeña aplicación creada con la línea de comandos con la ayuda
         se <strong>Click!</strong>, fue el resultado de un proyecto hecho en
-        <a href="www.platzi.com">Platzi</a> </p>
+        <a href="https://platzi.com/">Platzi</a> </p>
+        <img src="pVentas.png" alt="platzi ventas" width="500" height="300">
       </article>
     </section>
-    <section>
+    <section id="experience">
       <h2>Más sobre mi experiencia</h2>
       <article>
         <figure>
-          <img>
+          <img alt="Inserta otras imagenes aquí">
         </figure>
         <h3>PENDIENTE!</h3>
+        <p>
+          <a href="https://www.youtube.com/watch?v=TsTtqGAxvWk" target="_blank">
+            cancion
+          </a>
+        </p>
       </article>
     </section>
-    <section>seccion contactos</section>
+    <section id="together">
+      <form action="/suscription/" method="post">
+        <h3>¿Creamos algo juntos?</h3>
+        <input type="email" name="" value="" placeholder="Déjame tu e-mail">
+        <button>Send!</button>
+      </form>
+    </section>
     <footer>footer</footer>
   </body>
 </html>
