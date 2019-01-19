@@ -1,79 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>About me | FixingMind5</title>
-    <!--Aquí agregas un logo plis-->
-    <link rel="icon" type="image/png" href="">
     <link rel="stylesheet" href="Estilos/styles.css">
-    <link rel="stylesheet" href="Estilos/Normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link rel="stylesheet" href="Estilos/Normalize.css">
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <figure>
-          <!--<img src="" alt="Logo FixingMind5">-->
+    <div class="header">
+      <header class="header-menu">
+        <figure class="header-logo">
+          <img src="" alt="Logo">
         </figure>
-        <nav>
-          <ul>
-            <li><a class="link" href="#portfolio">Portafolio</a></li>
-            <li><a class="link" href="#idiomas">Idiomas</a></li>
-            <li><a class="link" href="#together">Trabajemos juntos</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <section class="hero">
-      <h1 class="hero-title">Hola soy <strong>Alejandro Aguilar</strong>,<br/>aspirante a ¡<strong>machine learning</strong>
-      engineer!</h1>
-    </section>
-    <section id="portfolio" class="portfolio">
-      <div class="portfolio-div">
-        <h2 class="project-title">Portafolio | (proyectos destacados)</h2><br/>
-        <article class="project-article">
-          <h3 class="project-subtitle">Platzi Ventas</h3>
-          <h6 class="project-language">Python / Click</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> 01/07/2019</small></p>
-          <p class="project-ref">
-            <small>
-              <strong>Puedes verlo en:</strong>
-              <a class="project-link" href="https://github.com/FixingMind5/Platzi_Ventas">Platzi Ventas</a>
-            </small>
+          <a class="header-link" href="#projects">Projects</a>
+          <a class="header-link" href="#idioms">Idioms</a>
+          <a class="header-link" href="#degrees">Degrees</a>
+          <a class="header-link"
+             href="#footer"
+             style="border: solid 3px white; padding: 10px;">Contact Me</a>
+      </header>
+    </div>
+    <div class="me">
+      <section class="me">
+        <img class="me-image" src="yo.jpeg" alt="me" width="200px" height="200px" >
+        <h1 class="me-description">Hello, I'm <strong>Manuel Aguilar</strong> <br>
+          aspiring <strong>Machine Learning</strong> engineer!
+        </h1>
+      </section>
+    </div>
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+        <article class="project-platziventas">
+          <div class="project-description">
+            <h3 class="project-details">Platzi Ventas
+              <br> <small>Python / Click</small>
+              <br> <small><strong>Date: </strong> 01/07/2019 </small>
+            </h3>
+          <p>A command line app created with Click colaboration <br>
+            across the python curse in Platzi. You can see the files
+            <a href="https://github.com/FixingMind5/Platzi_Ventas" target="_blank">here!</a>
+            <br>
+            <br>
+            In despite of, I want to tell you that I'm not only create this app,
+            I also writte another little projects like a game or a turtle, hope
+            you can enjoy it too!
           </p>
-          <p class="project-description">Una pequeña aplicación creada con la línea de comandos con la ayuda
-            de <strong>Click!</strong>, fue el resultado de un proyecto hecho en
-            <a class="project-link" href="https://platzi.com/">Platzi</a></p>
-          <figure class="project-imageContainer">
-            <img class="project-image" src="pVentas.png" alt="platzi ventas" width="500" height="300">
-          </figure>
-          </article>
-        </section>
       </div>
-    <section id="idiomas" class="idioms">
-      <div class="idioms-div">
-        <h2 class="idioms-start">Idiomas</h2>
-        <p class="idioms-description">Una breve descripción de mí en los idiomas que sé</p>
-        <article class="idioms-article">
-          <h3 class="idiom">English</h3>
-          <figure class="idiom-imageContainer">
-            <img class="idiom-image" src="Ingles.png" alt="United States flag" width="50", height="25">
-          </figure>
-          <p class="idiom-description">Hello, this is me Alejandro Aguilar, I'm an 18 years old guy that is
-            in love with the programming and mathematics, my hometown is Mexico
-            City a beautiful place with eyes that comes from the sky</p>
-          </article>
+      <figure class="project-imageContainer">
+        <img src="Platziventas.png" alt="platzi_ventas" width="700px" height="450px">
+      </figure>
+    </article>
+    <article class="project-misfinanzas">
+      <figure class="project-imageContainer">
+        <img src="misfinanzas.png" alt="Mis_finanzas" width="700px" height="450px">
+      </figure>
+      <div class="project-description">
+        <h3 class="project-details">Mis Finanzas
+          <br> <small>Swift / XCode</small>
+          <br> <small><strong>Date: </strong> 01/02/2019 </small>
+        </h3>
+        <p>Mis Finanzas is the result of a self challenge, I remember create it
+          inmediatly I have finished the siwft curse, those days, while i'm taking
+          self financies in the same platform, raise me the idea to apply this
+          knowledge to create a backend for a more professional project. The code
+          have some functionalities like check lifetime value, financiery health,
+          debits and gains, cash stream too.
+          <br>
+          <br>
+          You can check this
+          <a href="https://github.com/FixingMind5/MisFinanzas" target="_blank">here!</a>
+        </p>
+      </div>
+    </article>
+    <section class="idioms-wrapper" id="idioms">
+      <h2>Idioms</h2>
+      <div class="idioms">
+        <div class="english">
+          <img class="english-image" src="Ingles.png" alt="EUA" width="100px" height="100px">
+          <h3 class="english-title">English</h3>
+          <p>Hi guys whats up!, how are you?, hope that fine, this is me Manuel Aguilar
+            I'm eighteen years old, my hometown is mexico city. If you want to see my
+            english certificate check the <strong>degrees</strong> section, there you'll
+            find some things maybe you could be interested in.
+          </p>
+        </div>
+        <div class="deutsch">
+          <img class="deutsch-image" src="deutsch.jpg" alt="Deutsch" width="100px" height="100px">
+          <h3 class="deutsch-title">Deutsch</h3>
+          <p>Hallo! wie geht's dir?, ich heisse Manuel Aguilar und habe achtzehn jahre alt,
+             ich bin mexikanisch und liebe Matematik!
+          </p>
+        </div>
+        <div class="espanol">
+          <img class="espanol-image" src="espana.jpg" alt="espana" width="100px" height="100px">
+          <h3 class="espanol-title">Español</h3>
+          <p>¿Qué tal?, Soy Manuel Alejandro, si te gustan mis proyectos y quieres colaborar
+            conmigo no olvides en contactarme en la pestañita de contact me. Esta es mi
+            lengua madre. Soy mexicano y tengo dieciocho años. Puedes ver mis diplomas en
+            la sección de <strong>degrees</strong>.
+          </p>
+        </div>
       </div>
     </section>
-    <section id="together" class="colaboration">
-      <form class="colaboration-form" action="/suscription/" method="post">
-        <h3 class="colaboration-title">¿Creamos algo juntos?</h3>
-        <input class="colaboration-request" type="email" placeholder="Déjame tu e-mail">
-        <button class="colaboration-send">Send!</button>
-      </form>
+    <h2>Degrees</h2>
+    <section class="degrees" id="degrees">
+        <div class="degree-title">
+          <img src="degrees/data_eng.png" alt="data_eng" width="400px" height="100px">
+        </div>
+        <div class="degree-title">
+          <img src="degrees/data-base.png" alt="data_base" width="400px" height="100px">
+        </div>
+        <div class="degree-title">
+          <img src="degrees/fmat.png" alt="fmat" width="400px" height="100px">
+        </div>
+        <div class="degree-title">
+          <img src="degrees/git.png" alt="git" width="400px" height="100px">
+        </div>
+        <div class="degree-title">
+          <img src="degrees/ing_soft.png" alt="ing_soft" width="400px" height="100px">
+        </div>
+        <div class="degree-title">
+          <img src="degrees/prog_bas.png" alt="prog_bas" width="400px" height="100px">
+        </div>
+        <div class="degree-title">
+          <img src="degrees/prog_C.png" alt="prog_C" width="400px" height="100px">
+        </div>
+        <div class="degree-title">
+          <img src="degrees/python.png" alt="python" width="400px" height="100px">
+        </div>
+        <div class="degree-title">
+          <img src="degrees/redes.png" alt="redes" width="400px" height="100px">
+        </div>
+        <div class="degree-title">
+          <img src="degrees/swift.png" alt="swift" width="400px" height="100px">
+        </div>
+        <div class="degree-title">
+          <img src="degrees/terminal.png" alt="terminal" width="400px" height="100px">
+        </div>
+        <div class="degree-title">
+          <img src="degrees/ingles_bas.png" alt="ingles" width="400px" height="100px">
+        </div>
     </section>
-    <footer class="footer">footer</footer>
+    <footer class="footer" id="footer">
+      <h3 class="footer-title">Contact me!</h3>
+      <br>
+      <input type="email" placeholder="Leave your e-mail">
+      <button type="button" name="button">Send!</button>
+    </footer>
   </body>
 </html>
