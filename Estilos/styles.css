@@ -56,7 +56,7 @@ body {
   color: #f5f6fa;
 }
 
-.projects h2{
+.portfolio h2{
   font-family: 'Nanum Gothic', sans-serif;
   letter-spacing: 3px;
   font-size: 35px;
@@ -67,7 +67,7 @@ body {
   border-radius: 130px;
 }
 
-.projects {
+.portfolio {
   font-family: 'Nanum Gothic', sans-serif;
 }
 
@@ -220,4 +220,41 @@ body {
 .footer-title {
   font-size: 30px;
   margin: 0px;
+}
+
+.contact-networks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #40739e;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 25px;
+}
+
+.contact-link {
+  margin: 0px 100px;
+  width: 100px;
+  height: 100px;
+}
+
+.contact-link.mail {
+  background-image: url('../gmail.png');
+  background-size: 105px 105px;
+  background-repeat: no-repeat;
+  border-radius: 160px;
+}
+
+.contact-link.github {
+  background-image: url("../github.png");
+  background-size: 105.75px 105px;
+  background-repeat: no-repeat;
+  border-radius: 160px;
+}
+
+.contact-link.platzi {
+  background-image: url("../fixingmind5.jpg");
+  background-size: 105.75px;
+  background-repeat: no-repeat;
+  border-radius: 160px;
 }
